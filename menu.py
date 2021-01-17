@@ -11,12 +11,12 @@ class Okno(Widget):
 
     def poct(self):
         subprocess.Popen(['python', 'pocitani/count.py'])
-        App.on_stop()
+        App.stop()
         sys.exit(0)
 
     def gram(self):
         subprocess.Popen(['python', 'gramatika/gramatika.py'])
-        App.on_stop()
+        App.stop()
         sys.exit(0)
 
 

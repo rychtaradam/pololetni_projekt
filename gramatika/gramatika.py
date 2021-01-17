@@ -41,90 +41,91 @@ class Okno(Widget):
 
     button = ObjectProperty(None)
     pb = 0
+    c = ['', '', '', '', '', '', '', '', '', '']
 
     def btn(self):
         if self.pb == 0:
             self.pb = 1
             self.button.text = "Zkontrolovat"
-            c = ['', '', '', '', '', '', '', '', '', '']
+
             s = 0
             for x in range(10):
                 s = 0
                 while s == 0:
-                    c[x] = random.randint(0, len(zadani) - 1)
+                    self.c[x] = random.randint(0, len(zadani) - 1)
                     s = 1
                     for y in range(len(zadani) - 1):
-                        if c[x] == c[y]:
+                        if self.c[x] == self.c[y]:
                             if x != y:
                                 s = 0
 
-            self.l0.text = zadani[c[0]][0]
-            self.l1.text = zadani[c[1]][0]
-            self.l2.text = zadani[c[2]][0]
-            self.l3.text = zadani[c[3]][0]
-            self.l4.text = zadani[c[4]][0]
-            self.l5.text = zadani[c[5]][0]
-            self.l6.text = zadani[c[6]][0]
-            self.l7.text = zadani[c[7]][0]
-            self.l8.text = zadani[c[8]][0]
-            self.l9.text = zadani[c[9]][0]
+            self.l0.text = zadani[self.c[0]][0]
+            self.l1.text = zadani[self.c[1]][0]
+            self.l2.text = zadani[self.c[2]][0]
+            self.l3.text = zadani[self.c[3]][0]
+            self.l4.text = zadani[self.c[4]][0]
+            self.l5.text = zadani[self.c[5]][0]
+            self.l6.text = zadani[self.c[6]][0]
+            self.l7.text = zadani[self.c[7]][0]
+            self.l8.text = zadani[self.c[8]][0]
+            self.l9.text = zadani[self.c[9]][0]
         else:
             ch = 0
-            if self.t0.text == zadani[0][1]:
+            if self.t0.text == zadani[self.c[0]][1]:
                 self.l0.color = 0, 1, 0, 1
             else:
                 self.l0.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t1.text == zadani[1][1]:
+            if self.t1.text == zadani[self.c[1]][1]:
                 self.l1.color = 0, 1, 0, 1
             else:
                 self.l1.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t2.text == zadani[2][1]:
+            if self.t2.text == zadani[self.c[2]][1]:
                 self.l2.color = 0, 1, 0, 1
             else:
                 self.l2.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t3.text == zadani[3][1]:
+            if self.t3.text == zadani[self.c[3]][1]:
                 self.l3.color = 0, 1, 0, 1
             else:
                 self.l3.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t4.text == zadani[4][1]:
+            if self.t4.text == zadani[self.c[4]][1]:
                 self.l4.color = 0, 1, 0, 1
             else:
                 self.l4.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t5.text == zadani[5][1]:
+            if self.t5.text == zadani[self.c[5]][1]:
                 self.l5.color = 0, 1, 0, 1
             else:
                 self.l5.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t6.text == zadani[6][1]:
+            if self.t6.text == zadani[self.c[6]][1]:
                 self.l6.color = 0, 1, 0, 1
             else:
                 self.l6.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t7.text == zadani[7][1]:
+            if self.t7.text == zadani[self.c[7]][1]:
                 self.l7.color = 0, 1, 0, 1
             else:
                 self.l7.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t8.text == zadani[8][1]:
+            if self.t8.text == zadani[self.c[8]][1]:
                 self.l8.color = 0, 1, 0, 1
             else:
                 self.l8.color = 1, 0, 0, 1
                 ch += 1
 
-            if self.t9.text == zadani[9][1]:
+            if self.t9.text == zadani[self.c[9]][1]:
                 self.l9.color = 0, 1, 0, 1
             else:
                 self.l9.color = 1, 0, 0, 1

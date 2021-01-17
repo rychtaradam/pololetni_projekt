@@ -4,6 +4,12 @@
 <Okno>
     btnPoc: btnPoc
     btnGra: btnGra
+    canvas.before:
+        Color:
+            rgba: (0.4, 0.6, 1, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
 
     GridLayout:
         cols: 1
@@ -11,17 +17,25 @@
         pos: 100, 100
 
         Label:
+            font_size: 70
             text: "Výuková aplikace"
 
         GridLayout:
             cols: 2
+            spacing: 10
 
             Button:
                 id: btnPoc
                 text: "Pocitani do 20"
                 on_press: root.poct()
+                background_color: (1, 1, 0.6, 0.8)
+                color: 0, 0, 0, 1
+                background_normal: ''
 
             Button:
                 id: btnGra
                 text: "Gramatika"
                 on_press: root.gram()
+                background_color: (1, 1, 0.6, 0.8)
+                color: 0, 0, 0, 1
+                background_normal: ''
