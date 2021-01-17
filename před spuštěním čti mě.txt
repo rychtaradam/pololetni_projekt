@@ -1,0 +1,4 @@
+Pro spuštění programu je potřeba program spustip přes cmd, ne přes pycharm.
+Musí být také nainstalováno Kivy: python -m pip install kivy[base] kivy_examples
+
+Spustě soubor menu.py

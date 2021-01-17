@@ -1,0 +1,204 @@
+#:kivy 2.0.0
+
+<Count>:
+
+    btn1: btn1
+    btn2: btn2
+    btn3: btn3
+    btn4: btn4
+    btn5: btn5
+    btn6: btn6
+    btn7: btn7
+    btn8: btn8
+    btn9: btn9
+    btn10: btn10
+    btn11: btn11
+    btn12: btn12
+    btn13: btn13
+    btn14: btn14
+    btn15: btn15
+    btn16: btn16
+    btn17: btn17
+    btn18: btn18
+    btn19: btn19
+    btn20: btn20
+
+    canvas:
+        Color:
+            rgba: 255, 255, 255, .9
+        Line:
+            width: 3.
+            rectangle: (self.x, 700, self.width, 0)
+    Label:
+        font_size: 30
+        center_x: root.width / 2
+        top: root.top
+        text: 'Počítej do 20'
+
+    GridLayout:
+        cols: 7
+        row_force_default: True
+        row_default_height: 100
+        spacing: 50
+        pos: 100, 400
+
+
+        Button:
+            id: btn1
+            text: root.list_of_numbers[0]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(1)
+
+        Button:
+            id: btn2
+            text: root.list_of_numbers[1]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(2)
+
+        Button:
+            id: btn3
+            text: root.list_of_numbers[2]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(3)
+
+        Button:
+            id: btn4
+            text: root.list_of_numbers[3]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(4)
+
+        Button:
+            id: btn5
+            text: root.list_of_numbers[4]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(5)
+
+        Button:
+            id: btn6
+            text: root.list_of_numbers[5]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(6)
+
+        Button:
+            id: btn7
+            text: root.list_of_numbers[6]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(7)
+
+        Button:
+            id: btn8
+            text: root.list_of_numbers[7]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(8)
+
+        Button:
+            id: btn9
+            text: root.list_of_numbers[8]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(9)
+
+        Button:
+            id: btn10
+            text: root.list_of_numbers[9]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(10)
+
+        Button:
+            id: btn11
+            text: root.list_of_numbers[10]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(11)
+
+        Button:
+            id: btn12
+            text: root.list_of_numbers[11]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(12)
+
+        Button:
+            id: btn13
+            text: root.list_of_numbers[12]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(13)
+
+        Button:
+            id: btn14
+            text: root.list_of_numbers[13]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(14)
+
+        Button:
+            id: btn15
+            text: root.list_of_numbers[14]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(15)
+
+        Button:
+            id: btn16
+            text: root.list_of_numbers[15]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(16)
+
+        Button:
+            id: btn17
+            text: root.list_of_numbers[16]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(17)
+
+        Button:
+            id: btn18
+            text: root.list_of_numbers[17]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(18)
+
+        Button:
+            id: btn19
+            text: root.list_of_numbers[18]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(19)
+
+        Button:
+            id: btn20
+            text: root.list_of_numbers[19]
+            size_hint_x: None
+            width: 100
+            background_color: 0, 0, 1, 1
+            on_press: root.check(20)

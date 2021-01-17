@@ -1,0 +1,117 @@
+<Label>:
+    font_size: 30
+
+<TextInput>:
+    font_size: 30
+    size_hint_x: None
+    width: 50
+    multiline:False
+
+<Okno>:
+
+    l0: l0
+    t0: t0
+    l1: l1
+    t1: t1
+    l2: l2
+    t2: t2
+    l3: l3
+    t3: t3
+    l4: l4
+    t4: t4
+    l5: l5
+    t5: t5
+    l6: l6
+    t6: t6
+    l7: l7
+    t7: t7
+    l8: l8
+    t8: t8
+    l9: l9
+    t9: t9
+    button: button
+
+    GridLayout:
+        cols:1
+        size: root.width - 200, root.height -200
+        pos: 100, 100
+
+        GridLayout:
+            cols:2
+
+            Label:
+                id: l0
+                text: "----------------------------------------->"
+
+            TextInput:
+                id: t0
+
+            Label:
+                id: l1
+                text: "Po kliknutí na"
+
+            TextInput:
+                id: t1
+
+            Label:
+                id: l2
+                text: "tlačítko START"
+
+            TextInput:
+                id: t2
+
+            Label:
+                id: l3
+                text: "se ti místo tohoto"
+
+            TextInput:
+                id: t3
+
+            Label:
+                id: l4
+                text: "textu zobrazí zadání,"
+
+            TextInput:
+                id: t4
+
+            Label:
+                id: l5
+                text: "tvím úkolem je zadat"
+
+            TextInput:
+                id: t5
+
+            Label:
+                id: l6
+                text: "y nebo i do boxu"
+
+            TextInput:
+                id: t6
+
+            Label:
+                id: l7
+                text: "v pravo."
+
+            TextInput:
+                id: t7
+
+            Label:
+                id: l8
+                text: "HODNĚ ŠTĚSTÍ"
+
+            TextInput:
+                id: t8
+
+            Label:
+                id: l9
+                text: "----------------------------------------->"
+
+            TextInput:
+                id: t9
+
+        Button:
+            size_hint_y: None
+            id: button
+            height: 50
+            text:"START"
+            on_press: root.btn()
